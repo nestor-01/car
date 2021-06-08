@@ -1,0 +1,22 @@
+{
+    "Table": {
+        "TableName": "vehicle",
+        "KeySchema": [
+            {
+            "AttributeName": "UUID",
+            "KeyType": "HASH"
+            }
+        ],
+        "AttributeDefinitions":[
+            {
+                "AttributeName": "UUID",
+                "AttributeType": "S"
+            }
+        ],
+        "ProvisionedThroughput": {
+            "ReadCapacityUnits": 1,
+            "WriteCapacityUnits": 1
+        }
+    }
+
+}
